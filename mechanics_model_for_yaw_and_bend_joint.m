@@ -1,6 +1,6 @@
 
-function [thetaSum,posEE,bodyLine_force] = mechanics_model_for_yaw_and_bend_joint(CompYaw)
-% If you want to bend data, use CompBend(not CompYaw) and modify the code.
+function [thetaSum,posEE,bodyLine_force] = mechanics_model_for_yaw_and_bend_joint(CompValue_yaw)
+% If you want to bend data, use CompValue_bend(not CompValue_yaw) and modify the code.
 %% 1. condition setting (structure)
 
 % niti size, mm
