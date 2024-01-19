@@ -1,5 +1,12 @@
 vert_vec = [0 1];
 %you should load 'bodyLine_force.mat' file from mechanics model for yaw and bend joint.m file. (Bending joint data)
+%%
+for i = 1:81
+    
+    bend_base_ee(i,:) = [bodyline_force(i,169,1), bodyline_force(i,169,2)];
+
+end
+%%
 for k = 1:81
 
     ori_yaw = [bodyline_force(k,169,1), bodyline_force(k,169,2)];
